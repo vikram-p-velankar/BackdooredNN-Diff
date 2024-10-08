@@ -1,0 +1,538 @@
+parameters model ResNet 18 has
+
+
+
+
+layer 1 64
+
+layer 2 64
+
+layer 3 64
+
+layer 4 64
+
+layer 5 64
+
+layer 6 64
+
+layer 7 64
+
+layer 8 64
+
+layer 9 64
+
+layer 10 64
+
+layer 11 64
+
+layer 12 64
+
+layer 13 64
+
+layer 14 64
+
+layer 15 64
+
+layer 16 128
+
+layer 17 128
+
+layer 18 128
+
+layer 19 128
+
+layer 20 128
+
+layer 21 128
+
+layer 22 128
+
+layer 23 128
+
+layer 24 128
+
+layer 25 128
+
+layer 26 128
+
+layer 27 128
+
+layer 28 128
+
+layer 29 128
+
+layer 30 128
+
+layer 31 256
+
+layer 32 256
+
+layer 33 256
+
+layer 34 256
+
+layer 35 256
+
+layer 36 256
+
+layer 37 256
+
+layer 38 256
+
+layer 39 256
+
+layer 40 256
+
+layer 41 256
+
+layer 42 256
+
+layer 43 256
+
+layer 44 256
+
+layer 45 256
+
+layer 46 512
+
+layer 47 512
+
+layer 48 512
+
+layer 49 512
+
+layer 50 512
+
+layer 51 512
+
+layer 52 512
+
+layer 53 512
+
+layer 54 512
+
+layer 55 512
+
+layer 56 512
+
+layer 57 512
+
+layer 58 512
+
+layer 59 512
+
+layer 60 512
+
+layer 61 1000
+
+layer 62 1000
+
+
+
+ Total Parameters = 16400
+
+parameters model ResNet 50 has
+
+
+
+
+layer 1 64
+
+layer 2 64
+
+layer 3 64
+
+layer 4 64
+
+layer 5 64
+
+layer 6 64
+
+layer 7 64
+
+layer 8 64
+
+layer 9 64
+
+layer 10 256
+
+layer 11 256
+
+layer 12 256
+
+layer 13 256
+
+layer 14 256
+
+layer 15 256
+
+layer 16 64
+
+layer 17 64
+
+layer 18 64
+
+layer 19 64
+
+layer 20 64
+
+layer 21 64
+
+layer 22 256
+
+layer 23 256
+
+layer 24 256
+
+layer 25 64
+
+layer 26 64
+
+layer 27 64
+
+layer 28 64
+
+layer 29 64
+
+layer 30 64
+
+layer 31 256
+
+layer 32 256
+
+layer 33 256
+
+layer 34 128
+
+layer 35 128
+
+layer 36 128
+
+layer 37 128
+
+layer 38 128
+
+layer 39 128
+
+layer 40 512
+
+layer 41 512
+
+layer 42 512
+
+layer 43 512
+
+layer 44 512
+
+layer 45 512
+
+layer 46 128
+
+layer 47 128
+
+layer 48 128
+
+layer 49 128
+
+layer 50 128
+
+layer 51 128
+
+layer 52 512
+
+layer 53 512
+
+layer 54 512
+
+layer 55 128
+
+layer 56 128
+
+layer 57 128
+
+layer 58 128
+
+layer 59 128
+
+layer 60 128
+
+layer 61 512
+
+layer 62 512
+
+layer 63 512
+
+layer 64 128
+
+layer 65 128
+
+layer 66 128
+
+layer 67 128
+
+layer 68 128
+
+layer 69 128
+
+layer 70 512
+
+layer 71 512
+
+layer 72 512
+
+layer 73 256
+
+layer 74 256
+
+layer 75 256
+
+layer 76 256
+
+layer 77 256
+
+layer 78 256
+
+layer 79 1024
+
+layer 80 1024
+
+layer 81 1024
+
+layer 82 1024
+
+layer 83 1024
+
+layer 84 1024
+
+layer 85 256
+
+layer 86 256
+
+layer 87 256
+
+layer 88 256
+
+layer 89 256
+
+layer 90 256
+
+layer 91 1024
+
+layer 92 1024
+
+layer 93 1024
+
+layer 94 256
+
+layer 95 256
+
+layer 96 256
+
+layer 97 256
+
+layer 98 256
+
+layer 99 256
+
+layer 100 1024
+
+layer 101 1024
+
+layer 102 1024
+
+layer 103 256
+
+layer 104 256
+
+layer 105 256
+
+layer 106 256
+
+layer 107 256
+
+layer 108 256
+
+layer 109 1024
+
+layer 110 1024
+
+layer 111 1024
+
+layer 112 256
+
+layer 113 256
+
+layer 114 256
+
+layer 115 256
+
+layer 116 256
+
+layer 117 256
+
+layer 118 1024
+
+layer 119 1024
+
+layer 120 1024
+
+layer 121 256
+
+layer 122 256
+
+layer 123 256
+
+layer 124 256
+
+layer 125 256
+
+layer 126 256
+
+layer 127 1024
+
+layer 128 1024
+
+layer 129 1024
+
+layer 130 512
+
+layer 131 512
+
+layer 132 512
+
+layer 133 512
+
+layer 134 512
+
+layer 135 512
+
+layer 136 2048
+
+layer 137 2048
+
+layer 138 2048
+
+layer 139 2048
+
+layer 140 2048
+
+layer 141 2048
+
+layer 142 512
+
+layer 143 512
+
+layer 144 512
+
+layer 145 512
+
+layer 146 512
+
+layer 147 512
+
+layer 148 2048
+
+layer 149 2048
+
+layer 150 2048
+
+layer 151 512
+
+layer 152 512
+
+layer 153 512
+
+layer 154 512
+
+layer 155 512
+
+layer 156 512
+
+layer 157 2048
+
+layer 158 2048
+
+layer 159 2048
+
+layer 160 1000
+
+layer 161 1000
+
+
+
+ Total Parameters = 81680
+
+
+
+parameters model VGG16 has
+
+
+
+
+layer 1 64
+
+layer 2 64
+
+layer 3 64
+
+layer 4 64
+
+layer 5 128
+
+layer 6 128
+
+layer 7 128
+
+layer 8 128
+
+layer 9 256
+
+layer 10 256
+
+layer 11 256
+
+layer 12 256
+
+layer 13 256
+
+layer 14 256
+
+layer 15 512
+
+layer 16 512
+
+layer 17 512
+
+layer 18 512
+
+layer 19 512
+
+layer 20 512
+
+layer 21 512
+
+layer 22 512
+
+layer 23 512
+
+layer 24 512
+
+layer 25 512
+
+layer 26 512
+
+layer 27 4096
+
+layer 28 4096
+
+layer 29 4096
+
+layer 30 4096
+
+layer 31 1000
+
+layer 32 1000
+
+
+
+ Total Parameters = 26832
