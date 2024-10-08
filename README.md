@@ -1,4 +1,4 @@
-# Industrial Scale Data Poisoning
+# BackdooredNN-Diff
 
 
 This framework implements data poisoning strategies that reliably apply imperceptible adversarial patterns to training data. If this training data is later used to train an entirely new model, this new model will misclassify specific target images.
@@ -18,6 +18,8 @@ Implemented poison recipes:
 * Hidden-Trigger Backdoor Attacks (https://arxiv.org/abs/1910.00033)
 * Convex Polytope attack (https://arxiv.org/pdf/1905.05897.pdf) [However we do not implement the threat model discussed there]
 * Patch Attacks (BadNets: Identifying Vulnerabilities in the Machine Learning Model Supply Chain - https://arxiv.org/abs/1708.06733)
+* data-poisoning (WITCHES’ BREW: INDUSTRIAL SCALE DATA POISON-
+ING VIA GRADIENT MATCHING) (https://arxiv.org/pdf/2009.02276) (https://github.com/JonasGeiping/data-poisoning)
 ### Dependencies:
 * PyTorch => 1.6.*
 * torchvision > 0.5.*
@@ -141,8 +143,7 @@ We also support attacks against the poisoning benchmark of https://github.com/ak
 Please cite the corresponding attack or defense papers when using this code for your research.
 
 ## Authors
-This framework was written by [Liam Fowl](https://github.com/lhfowl) and me ([Jonas Geiping](https://github.com/JonasGeiping)) with contributions by [Gowthami Somepalli](https://github.com/somepago), [Tom Goldstein](https://github.com/tomgoldstein) and [Gavin Taylor](https://github.com/gavinwtaylor).
-
+This framework was written by [Vikram Velankar](https://github.com/vikram-p-velankar) ([Ang-LI](https://github.com/)).
 ## Contact
 If you have questions, please raise an issue on this repository or write us an email.
 ¯\\\_(ツ)\_/¯
