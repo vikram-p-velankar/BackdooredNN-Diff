@@ -1,0 +1,20 @@
+Sequential(
+  (0): Flatten(start_dim=1, end_dim=-1)
+  (1): Linear(in_features=150528, out_features=100, bias=True)
+)
+
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+           Flatten-1               [-1, 150528]               0
+            Linear-2                  [-1, 100]      15,052,900
+================================================================
+Total params: 15,052,900
+Trainable params: 15,052,900
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.57
+Forward/backward pass size (MB): 1.15
+Params size (MB): 57.42
+Estimated Total Size (MB): 59.15
+
