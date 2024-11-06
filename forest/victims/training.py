@@ -2,6 +2,7 @@
 
 import torch
 import os
+from copy import deepcopy
 
 from collections import defaultdict
 
@@ -176,10 +177,25 @@ def run_step(kettle, poison_delta, epoch, stats, model, defs, optimizer, schedul
     if poison_delta is None: 
         print('')
     else:
-        dir_path = '/home/vikramdv/data-poisoning/outputs/ResNet-50/data-poisoning/CIFAR100'
+        dir_path = '/home/vikramdv/data-poisoning/outputs/ResNet-18/data-poisoning/CIFAR100'
+	#dir_path = '/home/vikramdv/data-poisoning/outputs/ResNet-18/data-poisoning/CIFAR100'
         if not os.path.exists(dir_path):
             os.makedirs(dir_path)
-        torch.save(model.state_dict(), f'{dir_path}/{epoch - 45}.pth')
+        #torch.save(model.state_dict(), f'{dir_path}/{epoch - 45}.pth')
+        mean = torch.mean(inputs)
+        std = torch.std(inputs)
+        #a = torch.load(f'{dir_path}/{epoch - 45}.pth')
+        #weights = deepcopy(model.state_dict())
+        state_dic = {
+            'pdata': batch,
+            'mean': mean,
+            'std': std,
+            'model': model.module.values(),
+            'train_layer': model.children(),
+            'performance': target_acc,
+            'cfg': kettle
+        }
+        torch.save(state_dic, os.path.join(dir_path, f"{epoch - 45}.pt"))
 	
     
 
